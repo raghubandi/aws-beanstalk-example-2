@@ -13,7 +13,7 @@ public class MyBeanstalkController {
 
 	@GetMapping("/{name}")
 	public ResponseEntity<String> getPerson(@PathVariable("name") String name) {
-		return new ResponseEntity<String>("Hi "+name+" Welcome to AWS CI CD pipeline", HttpStatus.OK);
+		return new ResponseEntity<String>("Hello "+name+" Welcome to AWS CI CD pipeline", HttpStatus.OK);
 	}
 	
 }
